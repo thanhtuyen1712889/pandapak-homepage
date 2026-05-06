@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PandaPak — Homepage (Paper Bowls + Soup Containers priority)</title>
+<template id="__bundler_thumbnail" data-bg-color="#0a6c3d">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0a6c3d"/>
+    <g fill="#ffffff">
+      <ellipse cx="600" cy="430" rx="220" ry="60" opacity="0.15"/>
+      <path d="M420 280 Q420 250 470 250 H730 Q780 250 780 280 L750 430 Q745 460 720 460 H480 Q455 460 450 430 Z"/>
+      <rect x="430" y="240" width="340" height="22" rx="11" fill="#f59e0b"/>
+    </g>
+    <text x="600" y="600" font-family="Helvetica,Arial,sans-serif" font-weight="800" font-size="58" fill="#ffffff" text-anchor="middle" letter-spacing="2">PANDAPAK</text>
+    <text x="600" y="650" font-family="Helvetica,Arial,sans-serif" font-weight="500" font-size="22" fill="#ffffff" text-anchor="middle" opacity="0.7">Loading…</text>
+  </svg>
+</template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #0a6c3d;
+    --green-deep: #075a31;
+    --green-soft: #e8f1ec;
+    --amber: #f59e0b;
+    --ink: #0F1A14;
+    --paper: #ffffff;
+    --paper-tint: #f4f7f5;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Be Vietnam Pro', "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  .container { max-width: 1320px; margin: 0 auto; }
+  button { font-family: inherit; }
+  a { color: inherit; }
+  ::selection { background: var(--green); color: #fff; }
+  /* hide scrollbar in strategy panel for cleanliness */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: rgba(15,26,20,0.15); border-radius: 4px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="homepage.jsx"></script>
+<script type="text/babel" src="sections.jsx"></script>
+<script type="text/babel" src="strategy.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
